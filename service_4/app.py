@@ -6,10 +6,15 @@ import random, requests
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 
-@app.route('/prize/<int:number>/<colour>',methods=["POST"])        
-def prize_gen(number,colour):
+@app.route('/prize',methods=["GET","POST"])        
+def prize_gen():
+    number= request.json['num']
+    colour = request.json['col']
+    
+    app.logger.info(number) 
     prize_obtained=""
-    if number == 15:
+
+    if number['number'] == 15:
         prize_obtained= "£50"
     else:
         prize_obtained="0"

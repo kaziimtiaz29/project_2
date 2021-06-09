@@ -17,19 +17,20 @@ class lottery(db.Model):
     #colours= db.Column(db.String(20),nullable=False)
     Prize=db.Column(db.String(30),nullable=False)
 
-@app.route('/')
-@app.route('/home')
+@app.route('/',methods =['GET','POST'])
+@app.route('/home',methods =['GET','POST'])
 def home():
-    number = requests.get('http://number_api:5001/get_number').json()['number']
-    colour = requests.get('http://colour_api:5002/colour')
-    prize= requests.post(f'http://prize_api:5003/prize/{number}/{colour}')
+    number = requests.get('http://number_api:5001/get_number').json()
+    colour = requests.get('http://colour_api:5002/colour').text
+    items={'num':number,'col':colour}
+    prize= requests.post('http://prize_api:5003/prize',json=items).text
 
-    prize_1 = lottery(Prize = prize.text)
+    prize_1 = lottery(Prize = prize)
 
     db.session.add(prize_1)
     db.session.commit()
-    all_prizes= lottery.query.order_by(lottery.id).limit(5).all()
-    return render_template("index.html",colours=colour.text,numbers=number,prize=prize.text,all_prizes=all_prizes)
+    all_prizes= lottery.query.order_by(lottery.id.desc()).limit(5).all()
+    return render_template("index.html",colours=colour,numbers=number,prize=prize,all_prizes=all_prizes)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

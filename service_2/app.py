@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 
 @app.route('/get_number',methods=["GET"])
 def lucky_number():
-    result = {'number':random.randint(10, 20)}
+    result = {'number':random.randint(14, 16)}
     return jsonify(result)
     
 if __name__ == "__main__":
