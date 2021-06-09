@@ -1,0 +1,27 @@
+<html>
+    <header>
+        <title>
+               Lottery prize generator
+        </title>
+    </header>
+
+    <body>
+        <h1>
+            lottery 
+        </h1>
+        <p> 
+             Lucky number is {{ numbers }}
+             <br>
+             your colour is {{ colours }}
+             <br>
+             your prize is {{ prize }}
+             <br>
+        </p>
+        <p>
+         Your lottery: 
+            {% for p in all_prizes %}
+            {{ p.prize }}  
+        <br> 
+        {% endfor %}
+    </body>
+</html>  

@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  server:
+    container_name: lucky_prize
+    image: kuddin1234/lucky_prize 
+    build: ./server
+    
+    ports:
+    - target: 5000 
+      published: 5000 
+      protocol: tcp
+    #environment:
+     # DATABASE_URI: ${DATABASE_URI}
+  number_api:
+    container_name: number_api
+    image: kuddin1234/number_api
+    build: ./service_2
+  colour_api:
+    container_name: colour_api
+    image: kuddin1234/colour_api
+    build: ./service_3
+  prize_api:
+    container_name: prize_api
+    image: kuddin1234/prize_api
+    build: ./service_4
+    # deploy:
+    #   replicas: 5
