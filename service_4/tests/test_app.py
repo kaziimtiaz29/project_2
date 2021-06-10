@@ -12,8 +12,7 @@ class TestHome(TestBase):
     def test_get_prize(self):
         # number= 15
         # colour='black'
-        response = self.client.post(url_for('prize_gen'),data = json['num']=15,json['col']='black',
-        follow_redirects=True
-        )
+        response = self.client.get(url_for('prize_gen'))
+        self.assertEqual(response.status_code, 200)
 
-        self.assertEqual(response.data.decode(),"£50")
+        
