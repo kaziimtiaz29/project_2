@@ -4,9 +4,9 @@ from os import getenv
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
-#app.config['SQLALCHEMY_DATABASE_URI']=getenv('DATABASE_URI')
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@35.246.108.74:3306/project2'
+#app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI']= getenv('DATABASE_URI')
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1234@35.246.31.22:3306/project2'
 #app.config['SECRET_KEY']=''
 
 db = SQLAlchemy(app) 

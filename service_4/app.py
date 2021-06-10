@@ -1,10 +1,12 @@
 from flask import Flask
 from flask import redirect, url_for, request, Response, jsonify
 import random, requests
+from os import getenv
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1234@35.246.31.22:3306/project2'
 
 @app.route('/prize',methods=["GET","POST"])        
 def prize_gen():
