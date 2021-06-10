@@ -4,7 +4,8 @@ sudo apt-get update
 #sudo apt install chromium-chromedriver -y
 #sudo apt install python3-venv
 
-sudo apt-get install python3-pip python3-venv -y 
+sudo apt-get install python3-pip -y
+sudo apt-get python3-venv -y 
 #python3 -m venv venv
 source venv/bin/activate
 pip3 install -r test_requirements.txt
