@@ -1,10 +1,8 @@
 ---
 # tasks file for worker
 
--name: Add a new worker to swarm
+- name: Add a new worker to swarm
   community.docker.docker_swarm:
-  state: join
-
-  join_token: {{ hostvars['manager']['swarm_info']['swarm_facts']['JoinTokens']['worker']}}
+    state: join
+    join_token: "{{ hostvars['manager']['swarm_info']['swarm_facts']['JoinTokens']['worker'] }}"
   remote_addrs: ['manager:2377']
-  
