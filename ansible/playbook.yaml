@@ -10,8 +10,8 @@
   - docker
   - worker
 
-# - hosts: load_balance
-#   become: true 
-#   roles:
-#   - nginx 
+- hosts: load_balance
+  become: true 
+  roles:
+  - nginx 
  
