@@ -1,16 +1,19 @@
 pipeline{
     agent any
     environment{
+        install="false"   
         DOCKER_USERNAME=credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD=credentials('DOCKER_PASSWORD')
     }
     stages {
         stage('install requirements'){
             steps{
-                //pytest
-                //run for each service
-                //produce cov reports
-                sh 'bash jenkins/install-requirements.sh'
+                script{
+                    if(env.install="true")
+                    {
+                      sh 'bash jenkins/install-requirements.sh'  
+                    }
+                }
             }
         }
         stage('test'){
