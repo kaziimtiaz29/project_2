@@ -39,5 +39,22 @@ I utilised an Trello board to keep track of my project and its development. The 
 ![trello](https://paste.pics/5d958ccf23a61d52c3d84385965d42f4)
 https://trello.com/b/0zlAQYwK/core-project
 
+## Database
+
+This application only requires a simple table to store information. Data is saved even after the application is brought down and back up via the use of a volume. The following table is used to store data:
+database pic
+
+## CI Pipeline  
+This first diagram is what I initially imagined the CI Pipeline to look like. 
+pic ci
+##
+risk assessment
+below show the risk assessment for the risks faced in this project
+![risk}(https://camo.githubusercontent.com/a6b5bdd2b3992baddcc17ef8fbcecf820c550a4ae2de5020fb3aa7590a67fed9/68747470733a2f2f696d6775722e636f6d2f364765394468652e6a7067)
+##  App Design 1
+pic app1
+
+## app design 2
+
 
 
