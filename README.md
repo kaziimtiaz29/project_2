@@ -4,7 +4,7 @@
 <ul>
   <li>Project Objective</li>
 <li>App Overview</li>
-<li>Asana Board</li>
+<li>Treello Board</li>
 <li>Database</li>
 <li>CI Pipeline</li>
 <li>App Design</li>
@@ -27,3 +27,7 @@ The requirements of the project are as follows:
 <li>As part of the project, you need to create an Ansible Playbook that will provision the environment that your application needs to run.</li>
 <li>To make your application accessible to the user, you'll need to employ a reverse proxy.</li>
 </ul>
+
+## App Overview
+I created a DnD Prize generating app.As part of having two implementations, the first one is simpler than the first. here the fisrt app will call upon service 2,3,4. service 2 will bring a ramdom number service 3 will bring a colour and service will generate a prize with combination of service 2,3.
+https://camo.githubusercontent.com/4cbf75cf12104d7c32bb628ad0075e33fdeecab56e208cc4cb199d42d519ba88/68747470733a2f2f696d6775722e636f6d2f324747444f67382e6a7067
