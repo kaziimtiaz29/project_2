@@ -56,7 +56,7 @@ below show the risk assessment for the risks faced in this project
 ##  App Design 1
 pic app1
 
-![app](images/front end.png)
+![app](https://github.com/kaziimtiaz29/project_2/blob/master/images/front%20end.png)
 
 
 
@@ -65,7 +65,7 @@ The app's deployment is automated and handled via Jenkins, Ansible, and Docker, 
 
 stage view is shown here
 pic stage view
-![st](images/stage view.png)
+![st](https://github.com/kaziimtiaz29/project_2/blob/master/images/stage%20view.png)
 
 ## Testing 
 
