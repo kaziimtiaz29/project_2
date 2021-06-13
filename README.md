@@ -36,27 +36,29 @@ I created a DnD Prize generating app.As part of having two implementations, the 
 
 I utilised an Trello board to keep track of my project and its development. The things required for the Minimum Viable Product are also listed on this board (MVP). This also includes finished user stories, which allow me to see what the user should be able to perform at the very least.
 
-![trello](https://paste.pics/5d958ccf23a61d52c3d84385965d42f4)
+![trello](images/trello.png)
 https://trello.com/b/0zlAQYwK/core-project
 
 ## Database
 
 This application only requires a simple table to store information. Data is saved even after the application is brought down and back up via the use of a volume. The following table is used to store data:
 database pic
+![sad](images/database.png)
 
 ## CI Pipeline  
 This first diagram is what I initially imagined the CI Pipeline to look like. 
 pic ci
+![ci](images/ci.png)
 ##
 risk assessment
 below show the risk assessment for the risks faced in this project
 ![risk](https://camo.githubusercontent.com/a6b5bdd2b3992baddcc17ef8fbcecf820c550a4ae2de5020fb3aa7590a67fed9/68747470733a2f2f696d6775722e636f6d2f364765394468652e6a7067)
 ##  App Design 1
-pic app1
 
-## app design 2
 
-## app 3 design
+The picture shows how it works. app one call upon other services. service 2 is showing numbers, service 3 is generating colours and service 4 is usign the results form service 2,3 to create a prize. it all randomly chosen for each case.
+
+![app](https://github.com/kaziimtiaz29/project_2/blob/master/images/front%20end.png)
 
 
 
@@ -65,6 +67,7 @@ The app's deployment is automated and handled via Jenkins, Ansible, and Docker, 
 
 stage view is shown here
 pic stage view
+![st](https://github.com/kaziimtiaz29/project_2/blob/master/images/stage%20view.png)
 
 ## Testing 
 
@@ -72,6 +75,11 @@ As part of the project requirement, I also carried out unit testing on both impl
 
 Here you can see the coverage of my tests for each service.
 pics 4 of them
+![test1](images/1st test.png)
+![t2](https://github.com/kaziimtiaz29/project_2/blob/master/images/2nd%20test.png)
+![sd](https://github.com/kaziimtiaz29/project_2/blob/master/images/3rd%20test.png)
+![as](https://github.com/kaziimtiaz29/project_2/blob/master/images/4th%20test.png)
+
 
 ## issues
 
