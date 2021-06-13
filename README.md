@@ -36,7 +36,7 @@ I created a DnD Prize generating app.As part of having two implementations, the 
 
 I utilised an Trello board to keep track of my project and its development. The things required for the Minimum Viable Product are also listed on this board (MVP). This also includes finished user stories, which allow me to see what the user should be able to perform at the very least.
 
-![trello](https://paste.pics/5d958ccf23a61d52c3d84385965d42f4)
+![trello](images/trello.png)
 https://trello.com/b/0zlAQYwK/core-project
 
 ## Database
