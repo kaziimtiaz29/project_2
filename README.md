@@ -78,7 +78,8 @@ pics 4 of them
 <ul>
 <li> machine ran out of space
 <li> nginx is not configured
- 
+<ul>
+  
 ## improvements
 
 <ul>
@@ -87,6 +88,8 @@ pics 4 of them
 <li>Keep stats in a database so that you have a complete character.
 <li>Add a functionality that allows users to query the database at any moment to retrieve a character.
 <li>Enhance your appearance
+<ul>
+  
 
 
 
