@@ -56,5 +56,38 @@ pic app1
 
 ## app design 2
 
+## app 3 design
+
+
+
+## Deployment
+The app's deployment is automated and handled via Jenkins, Ansible, and Docker, among other tools. Jenkins will trigger a pipeline job through webhook after I commit to GitHub. My Jenkinsfile outlines the various steps of the pipeline. Each step refers to a script that handles a distinct stage of the pipeline to increase readability. Jenkins will start by inspecting the source code.Then run all my unit tests, and if they pass it will move on to the next stage.Jenkins will use Ansible to configure my computers in this step. Different roles are defined in my Ansible playbook, allowing me to instal different requirements based on what each machine will be accountable for. Ansible will instal Docker on each machine.
+
+stage view is shown here
+pic stage view
+
+## Testing 
+
+As part of the project requirement, I also carried out unit testing on both implementations of my application.
+
+Here you can see the coverage of my tests for each service.
+pics 4 of them
+
+## issues
+
+<ul>
+<li> machine ran out of space
+<li> nginx is not configured
+ 
+## improvements
+
+<ul>
+<li>I could make the following enhancements in the future:
+<li>To avoid downtime, include error handling.
+<li>Keep stats in a database so that you have a complete character.
+<li>Add a functionality that allows users to query the database at any moment to retrieve a character.
+<li>Enhance your appearance
+
+
 
 
