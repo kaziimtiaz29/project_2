@@ -30,4 +30,5 @@ The requirements of the project are as follows:
 
 ## App Overview
 I created a DnD Prize generating app.As part of having two implementations, the first one is simpler than the first. here the fisrt app will call upon service 2,3,4. service 2 will bring a ramdom number service 3 will bring a colour and service will generate a prize with combination of service 2,3.
+!https://github.com/kaziimtiaz29/project_1/blob/master/pics/risk_asses_2.png 
 https://camo.githubusercontent.com/4cbf75cf12104d7c32bb628ad0075e33fdeecab56e208cc4cb199d42d519ba88/68747470733a2f2f696d6775722e636f6d2f324747444f67382e6a7067
