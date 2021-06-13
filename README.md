@@ -43,7 +43,7 @@ https://trello.com/b/0zlAQYwK/core-project
 
 This application only requires a simple table to store information. Data is saved even after the application is brought down and back up via the use of a volume. The following table is used to store data:
 database pic
-![sad](images/database.png)
+![sad](images/Untitled.png)
 
 ## CI Pipeline  
 This first diagram is what I initially imagined the CI Pipeline to look like. 
