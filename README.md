@@ -54,7 +54,9 @@ risk assessment
 below show the risk assessment for the risks faced in this project
 ![risk](https://camo.githubusercontent.com/a6b5bdd2b3992baddcc17ef8fbcecf820c550a4ae2de5020fb3aa7590a67fed9/68747470733a2f2f696d6775722e636f6d2f364765394468652e6a7067)
 ##  App Design 1
-pic app1
+
+
+The picture shows how it works. app one call upon other services. service 2 is showing numbers, service 3 is generating colours and service 4 is usign the results form service 2,3 to create a prize. it all randomly chosen for each case.
 
 ![app](https://github.com/kaziimtiaz29/project_2/blob/master/images/front%20end.png)
 
