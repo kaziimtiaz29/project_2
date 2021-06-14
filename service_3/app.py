@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/colour',methods=["GET"])        
 def colour_():
-    return random.choice(["red","blue","violet"])
+    return random.choice(["black","blue","violet"])
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5002, debug=True)

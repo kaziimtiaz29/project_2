@@ -17,7 +17,7 @@ def prize_gen():
     prize_obtained=""
 
     if number['number'] == 15:
-        prize_obtained= "£60"
+        prize_obtained= "£50"
     else:
         prize_obtained="0"
     return prize_obtained
