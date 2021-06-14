@@ -49,6 +49,9 @@ database pic
 This first diagram is what I initially imagined the CI Pipeline to look like. 
 pic ci
 ![ci](images/ci.png)
+Jenkins is a continuous integration and delivery pipeline technology. It starts a build when a new change is pushed to the version control system via a webhook. I utilised github as my version control system for my project, and Jenkins was connected to it via a webhook. Testing is the next step. To test every aspect of the application, unit tests and mock tests are written.If the testing section has returned back with no bugs, the next stage will kick off.After testing, the next step is to create images and publish them to Docker Hub (artefact repository). Jenkins will next run ansible, which will start the swarm manager and worker, as well as setup nginx. Ansible will also use a join token to connect the worker node to the manager node.Once, the swarm is initialised, the code is pulled from jenkins and any images required will be pulled from the artefact repository. Once the swarm is created and stack deployed to nginx the application is live now for the user.
+
+
 ##
 risk assessment
 below show the risk assessment for the risks faced in this project
@@ -68,6 +71,8 @@ The app's deployment is automated and handled via Jenkins, Ansible, and Docker, 
 stage view is shown here
 pic stage view
 ![st](https://github.com/kaziimtiaz29/project_2/blob/master/images/stage%20view.png)
+
+The above graphic depicts the project-build pipeline's logs, which illustrate the sequence in which each stage is implemented. The build logs make it easy to identify whether a stage has succeeded or failed. On Jenkins, the environment variables must first be specified as credentials.Credentials such as the database uri and the author need to be set in jenkins, in order for it to know what to refference when these variables are called upon.Furthermore, the advantage of using environment variables on jenkins is that they do not need to be altered once they are set. It's critical to keep credentials private.
 
 ## Testing 
 
